@@ -1,0 +1,6 @@
+[submodule "paper/paper-gtk-theme"]
+	path = paper/paper-gtk-theme
+	url = git@github.com:snwh/paper-gtk-theme.git
+[submodule "paper/paper-icon-theme"]
+	path = paper/paper-icon-theme
+	url = git@github.com:snwh/paper-icon-theme.git
