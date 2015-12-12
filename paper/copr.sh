@@ -41,7 +41,7 @@ if [[ "$(git status -s --ignore-submodules)" == "" ]]; then
   git add paper-*-theme || true
   git commit -m "Update from origin" || true
   git push || true
-  if [[ $(wget "http://bazaar.launchpad.net/~snwh/paper-icon-theme/paper-icon-theme-git/files/${build_info[1]}" --no-cache -O - | grep "git-v1" | head -n 1 | grep -Po "[0-9a-z]{40}") == "$(git ls-tree origin/master paper-icon-theme | grep -Po [a-z0-9]{40})" && "$(git rev-parse packaging)" == "$(git rev-parse origin/packaging)" ]]; then
+  if [[ $(wget "http://bazaar.launchpad.net/~snwh/paper-icon-theme/paper-icon-theme-git/files/${build_info[1]}" --no-cache -O - | grep "git-v1" | head -n 1 | grep -Po "[0-9a-z]{40}") == "$(git ls-tree origin/master paper-icon-theme | grep -Po [a-z0-9]{40})" && "$(git rev-parse HEAD)" == "$(git rev-parse origin/HEAD)" ]]; then
     GitSha=$(git ls-tree origin/master paper-icon-theme | grep -Po "[a-z0-9]{40}")
     Checkout=20151212git${GitSha:0:7}
   else
