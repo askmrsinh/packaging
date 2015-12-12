@@ -12,19 +12,19 @@ set -e
 set -o pipefail
 
 # Mirror Project's latest Launchpad build if it was successful and is not available in Copr
-build_info=($(wget "https://launchpad.net/~snwh/+archive/ubuntu/pulp/+builds?build_text=paper-icon-theme&build_state=all" -O - | grep -Po "build of paper-icon-theme [0-9].[0-9]\+r[0-9]{3}" | head -n 1 | grep -Po "[0-9.]{3}"))
+build_info=($(wget "https://launchpad.net/~snwh/+archive/ubuntu/pulp/+builds?build_text=paper-icon-theme&build_state=all" --no-cache -O - | grep -Po "build of paper-icon-theme [0-9].[0-9]\+r[0-9]{3}" | head -n 1 | grep -Po "[0-9.]{3}"))
 Version=${build_info[0]}.0
 Revision=0.${build_info[1]}
-if [[ $(wget "https://copr.fedoraproject.org/api/coprs/user501254/Paper/monitor/" -O - | grep -Po "[0-9.]{5}-[0-9.]{5}" | head -n 1) != "$Version-$Revision" ]]; then
-  if [[ $(wget "https://launchpad.net/paper-icon-theme/trunk" -O - | grep -P "[0-9]{3} revisions." | grep -Po "[0-9]{3}") != "${build_info[1]}" ]]; then
+if [[ $(wget "https://copr.fedoraproject.org/api/coprs/user501254/Paper/monitor/" --no-cache -O - | grep -Po "[0-9.]{5}-[0-9.]{5}" | head -n 1) != "$Version-$Revision" ]]; then
+  if [[ $(wget "https://launchpad.net/paper-icon-theme/trunk" --no-cache -O - | grep -P "[0-9]{3} revisions." | grep -Po "[0-9]{3}") != "${build_info[1]}" ]]; then
     echo -e "\e[0;34mThese's a pending Launchpad import. Exiting.\e[0m"
     exit
   fi
-  if [[ $(wget "https://launchpad.net/~snwh/+archive/ubuntu/pulp/+builds?build_text=paper-icon-theme&build_state=building" -O - | grep "paper-icon-theme ${build_info[0]}+r${build_info[1]}~daily~ubuntu") != "" ]]; then
+  if [[ $(wget "https://launchpad.net/~snwh/+archive/ubuntu/pulp/+builds?build_text=paper-icon-theme&build_state=building" --no-cache -O - | grep "paper-icon-theme ${build_info[0]}+r${build_info[1]}~daily~ubuntu") != "" ]]; then
     echo -e "\e[0;34mThese's a pending Launchpad build. Exiting.\e[0m"
     exit
   fi
-  if [[ $(wget "https://launchpad.net/~snwh/+archive/ubuntu/pulp/+builds?build_text=paper-icon-theme&build_state=built" -O - | grep "paper-icon-theme ${build_info[0]}+r${build_info[1]}~daily~ubuntu") != "" ]]; then
+  if [[ $(wget "https://launchpad.net/~snwh/+archive/ubuntu/pulp/+builds?build_text=paper-icon-theme&build_state=built" --no-cache -O - | grep "paper-icon-theme ${build_info[0]}+r${build_info[1]}~daily~ubuntu") != "" ]]; then
     echo -e "\e[0;34mLast Launchpad build paper-icon-theme ${build_info[0]}+r${build_info[1]}~daily~ubuntu was a success.\e[0m"
   else
     echo -e "\e[0;31mLast Launchpad build paper-icon-theme ${build_info[0]}+r${build_info[1]}~daily~ubuntu was a failure. Exiting.\e[0m"
@@ -41,7 +41,7 @@ if [[ "$(git status -s --ignore-submodules)" == "" ]]; then
   git add paper-*-theme || true
   git commit -m "Update from origin" || true
   git push || true
-  if [[ $(wget "http://bazaar.launchpad.net/~snwh/paper-icon-theme/paper-icon-theme-git/files/${build_info[1]}" -O - | grep "git-v1" | head -n 1 | grep -Po "[0-9a-z]{40}") == "$(git ls-tree origin/master paper-icon-theme | grep -Po [a-z0-9]{40})" && "$(git rev-parse packaging)" == "$(git rev-parse origin/packaging)" ]]; then
+  if [[ $(wget "http://bazaar.launchpad.net/~snwh/paper-icon-theme/paper-icon-theme-git/files/${build_info[1]}" --no-cache -O - | grep "git-v1" | head -n 1 | grep -Po "[0-9a-z]{40}") == "$(git ls-tree origin/master paper-icon-theme | grep -Po [a-z0-9]{40})" && "$(git rev-parse packaging)" == "$(git rev-parse origin/packaging)" ]]; then
     GitSha=$(git ls-tree origin/master paper-icon-theme | grep -Po "[a-z0-9]{40}")
     Checkout=20151212git${GitSha:0:7}
   else
