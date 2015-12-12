@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 40-CHARACTER-HASH-VALUE
+%global commit0 cd0e7988f6a838698d3f1a8ac48e63dd351e4ba0
 
 name:       paper-icon-theme
-version:    1.1
-release:    1
+version:    1.1.0
+release:    0.236.20151212gitcd0e798%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
