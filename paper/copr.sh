@@ -38,9 +38,9 @@ fi
 # Make sure that there are no modified, untracked files and everything is up-to-date
 if [[ "$(git status -s --ignore-submodules)" == "" ]]; then
   git submodule foreach git pull origin master
-  git add paper-*-theme
-  git commit -m "Update from origin"
-  git push
+  git add paper-*-theme || true
+  git commit -m "Update from origin" || true
+  git push || true
   if [[ $(wget "http://bazaar.launchpad.net/~snwh/paper-icon-theme/paper-icon-theme-git/files/${build_info[1]}" -O - | grep "git-v1" | head -n 1 | grep -Po "[0-9a-z]{40}") == "$(git ls-tree origin/master paper-icon-theme | grep -Po [a-z0-9]{40})" && "$(git rev-parse packaging)" == "$(git rev-parse origin/packaging)" ]]; then
     GitSha=$(git ls-tree origin/master paper-icon-theme | grep -Po "[a-z0-9]{40}")
     Checkout=20151212git${GitSha:0:7}
