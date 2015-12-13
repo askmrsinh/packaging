@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 40-CHARACTER-HASH-VALUE
+%global commit0 6a5f14cfe697b0a829456a1fd560acdcddc6043f
 
 name:       paper-gtk-theme
-version:    1.0
-release:    0
+version:    1.0.0
+release:    0.164.20151213git6a5f14c%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
