@@ -1,6 +1,6 @@
 # Spec file for package paper-gtk-theme
 #
-# Copyright (c) 2014 Sam Hewitt <hewittsamuel@gmail.com>
+# Copyright (c) 2015 Sam Hewitt <sam@snwh.org>
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 6a5f14cfe697b0a829456a1fd560acdcddc6043f
+%global commit0 617a6b1549d9512da2a01585e18f2ac09a4c530a
 
 name:       paper-gtk-theme
 version:    1.0.0
-release:    0.164.20151213git6a5f14c%{?dist}
+release:    0.168.20151213git6a5f14c%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
