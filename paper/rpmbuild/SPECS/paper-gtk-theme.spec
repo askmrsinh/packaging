@@ -18,7 +18,7 @@
 
 name:       paper-gtk-theme
 version:    1.0.0
-release:    0.168.20151213git6a5f14c%{?dist}
+release:    0.168.20151213git617a6b1%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
