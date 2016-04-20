@@ -43,7 +43,7 @@ if [[ "$(git status -s --ignore-submodules)" == "" ]]; then
   git push || true
   if [[ $(wget "http://bazaar.launchpad.net/~snwh/paper-icon-theme/paper-icon-theme-git/files/${build_info[1]}" --no-cache -O - | grep "git-v1" | head -n 1 | grep -Po "[0-9a-z]{40}") == "$(git ls-tree origin/master paper-icon-theme | grep -Po [a-z0-9]{40})" && "$(git rev-parse HEAD)" == "$(git rev-parse origin/HEAD)" ]]; then
     GitSha=$(git ls-tree origin/master paper-icon-theme | grep -Po "[a-z0-9]{40}")
-    Checkout=20151212git${GitSha:0:7}
+    Checkout=20160420git${GitSha:0:7}
   else
     git status
     echo -e "\e[0;31m\nExiting.\e[0m"
@@ -73,7 +73,7 @@ rpmbuild --define "_topdir $PWD/rpmbuild" -bs rpmbuild/SPECS/paper-icon-theme.sp
 # Submit Source RPM to Copr
 PkgVersion=$Version-$Revision.$Checkout.$(uname -a | grep -Po "fc[0-9]{2}")
 echo -e "\e[0;34m\nUploading paper-icon-theme-$PkgVersion.src.rpm to Copr\e[0m"
-copr-cli build Paper "rpmbuild/SRPMS/paper-icon-theme-$PkgVersion.src.rpm" -r epel-7-x86_64 -r fedora-22-i386 -r fedora-22-x86_64 -r fedora-23-i386 -r fedora-23-x86_64
+copr-cli build Paper "rpmbuild/SRPMS/paper-icon-theme-$PkgVersion.src.rpm" -r epel-7-x86_64 -r fedora-22-i386 -r fedora-22-x86_64 -r fedora-23-i386 -r fedora-23-x86_64 -r fedora-24-i386 -r fedora-24-x86_64
 
 # Cleanup
 rm -r "rpmbuild/SRPMS/paper-icon-theme-$PkgVersion.src.rpm"
