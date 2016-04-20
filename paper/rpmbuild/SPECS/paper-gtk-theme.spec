@@ -14,16 +14,16 @@
 
 
 # GitHub Stuff
-%global commit0 02973b6e054a3b1699eebfbf3b72d940f24f72e8
+%global commit0 91db30f5c8ef2ac824daef6af116231bc3dde0de
 
 name:       paper-gtk-theme
-version:    1.1.0
-release:    0.194.20151213git02973b6%{?dist}
+version:    2.0.0
+release:    0.212.20151213git91db30f%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
 License:    GPL-3.0+
-Url:        http://samuelhewitt.com/paper/theme
+Url:        http://snwh.org/paper/theme
 Source0:    %{name}-%{commit0}.tar.gz
 Requires:   gtk2-engines
 BuildArch:  noarch
