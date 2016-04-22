@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 91db30f5c8ef2ac824daef6af116231bc3dde0de
+%global commit0 de443e32b906fc7c46db3d435a158cdaeebcc78d
 
 name:       paper-gtk-theme
 version:    2.0.0
-release:    0.212.20151213git91db30f%{?dist}
+release:    0.213.20151213gitde443e3%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
