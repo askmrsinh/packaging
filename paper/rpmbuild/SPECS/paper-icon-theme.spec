@@ -23,8 +23,8 @@ release:    0.303.20160420gitb4a585d%{?dist}
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
 License:    CC-BY-SA-4.0
-Url:        http://samuelhewitt.com/paper/icons
-Source0:    %{name}-%{commit0}.tar.gz
+Url:        http://snwh.org/paper/icons
+Source0:    https://github.com/snwh/%{name}/archive/%{commit0}.tar.gz#/%{name}-%{commit0}.tar.gz
 Requires:   hicolor-icon-theme, gnome-icon-theme
 BuildArch:  noarch
 
@@ -47,3 +47,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %files
 %doc AUTHORS COPYING
 %{_datadir}/icons/Paper/
+
+%changelog

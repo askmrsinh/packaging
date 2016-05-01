@@ -24,7 +24,7 @@ Summary:    Paper GTK Theme
 Group:      System/GUI/Other
 License:    GPL-3.0+
 Url:        http://snwh.org/paper/theme
-Source0:    %{name}-%{commit0}.tar.gz
+Source0:    https://github.com/snwh/%{name}/archive/%{commit0}.tar.gz#/%{name}-%{commit0}.tar.gz
 Requires:   gtk2-engines
 BuildArch:  noarch
 
@@ -44,3 +44,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %files
 %doc AUTHORS LICENSE
 %{_datadir}/themes/Paper/
+
+%changelog
