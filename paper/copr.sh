@@ -43,7 +43,7 @@ submit_build(){
     cd ..
   else
     echo -e "\e[0;32m$1 $pkg_version is already available in Copr repo. Exiting.\e[0m"
-    exit
+    return
   fi
 
   # Get commit0 value within spec file for generating Changelog
