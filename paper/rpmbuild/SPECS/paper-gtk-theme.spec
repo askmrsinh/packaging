@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 1c81a528f5eb7e13221b0ca0a417aa30362b5e00
+%global commit0 9ba6f63059f63d40ed7bcc0e50dee370fbbeba54
 
 name:       paper-gtk-theme
 version:    2.0.0
-release:    0.223.20160501git1c81a52%{?dist}
+release:    0.224.20160501git9ba6f63%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,7 +46,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Sun May 01 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.223
-- 1c81a52: updated issue template	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 724a520: added issue template	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 4201a32: updated selection colour in gtk2	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Tue May 03 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.224
+- 9ba6f63: a few fixes	(Sam Hewitt <hewittsamuel@gmail.com>)
