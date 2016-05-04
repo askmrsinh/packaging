@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 24f2f5ba9b3ae8ccb89fd25c0b3266fd111faf32
+%global commit0 e778316c314b0c8d92f035b4db7a625570d3528c
 
 name:       paper-icon-theme
 version:    1.2.0
-release:    0.330.20160501git24f2f5b%{?dist}
+release:    0.332.20160501gite778316%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,11 +49,6 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Mon May 02 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.2.0-0.330
-- 24f2f5b: added ruby mimes	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 548e646: refined a few icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 2b19ba0: xfwm4 link	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 3b89fc2: added panel icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 725a11c: added panel icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 8f21683: added wine icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 6cdca5b: added hexchat icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Wed May 04 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.2.0-0.332
+- e778316: added opera icons; refined terminal icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 2659c96: added byobu and rednotebook icons; added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
