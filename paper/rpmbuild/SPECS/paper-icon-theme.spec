@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 e778316c314b0c8d92f035b4db7a625570d3528c
+%global commit0 6316efdc9b684dd554cd6b91c70bb916c9d31856
 
 name:       paper-icon-theme
 version:    1.2.0
-release:    0.332.20160501gite778316%{?dist}
+release:    0.333.20160501git6316efd%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,6 +49,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Wed May 04 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.2.0-0.332
-- e778316: added opera icons; refined terminal icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 2659c96: added byobu and rednotebook icons; added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Thu May 05 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.2.0-0.333
+- 6316efd: added redshift icon	(Sam Hewitt <hewittsamuel@gmail.com>)
