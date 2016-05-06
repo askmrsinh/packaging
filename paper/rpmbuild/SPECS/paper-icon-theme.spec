@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 6316efdc9b684dd554cd6b91c70bb916c9d31856
+%global commit0 7cb5e661d4105bfb67b180ca6ca188c9d0abad5e
 
 name:       paper-icon-theme
 version:    1.2.0
-release:    0.333.20160501git6316efd%{?dist}
+release:    0.334.20160501git7cb5e66%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,5 +49,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Thu May 05 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.2.0-0.333
-- 6316efd: added redshift icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Fri May 06 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.2.0-0.334
+- 7cb5e66: added openshot icon	(Sam Hewitt <hewittsamuel@gmail.com>)
