@@ -77,7 +77,7 @@ submit_build(){
   # Submit Source RPM to Copr
   echo ""
   echo -e "\e[0;34mSubmitting Source RPM to Copr.\e[0m"
-  copr-cli build Paper "rpmbuild/SRPMS/$1-$pkg_version.src.rpm" -r epel-7-x86_64 -r fedora-22-i386 -r fedora-22-x86_64 -r fedora-23-i386 -r fedora-23-x86_64 -r fedora-24-i386 -r fedora-24-x86_64
+  copr-cli build --nowait Paper "rpmbuild/SRPMS/$1-$pkg_version.src.rpm" -r epel-7-x86_64 -r fedora-22-i386 -r fedora-22-x86_64 -r fedora-23-i386 -r fedora-23-x86_64 -r fedora-24-i386 -r fedora-24-x86_64
 
   # Cleanup
   rm -r "rpmbuild/SRPMS/$1-$pkg_version.src.rpm"
