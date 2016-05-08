@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 7cb5e661d4105bfb67b180ca6ca188c9d0abad5e
+%global commit0 45207e8406cf4a702cf74c81b33bb4f170f7aeef
 
 name:       paper-icon-theme
 version:    1.2.0
-release:    0.334.20160501git7cb5e66%{?dist}
+release:    0.340.20160501git45207e8%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,5 +49,10 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Fri May 06 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.2.0-0.334
-- 7cb5e66: added openshot icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Sun May 08 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.2.0-0.340
+- 45207e8: added less-than-satisfactory gimp icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 35ab919: refined display icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f1b9a3d: refined symbolic icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f8f793f: refined utilities icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f57723e: added utilities icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 95e2220: added computer icon	(Sam Hewitt <hewittsamuel@gmail.com>)
