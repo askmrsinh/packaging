@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 8f57e983dff1874925d2fe5fbdb4311dcb2f3cce
+%global commit0 82503f83037246ecb8de5c4faa9dd8f151d73915
 
 name:       paper-gtk-theme
 version:    2.0.0
-release:    0.226.20160501git8f57e98%{?dist}
+release:    0.227.20160501git82503f8%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,6 +46,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Fri May 06 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.226
-- 8f57e98: a few 3.20 bug fixes	(Sam Hewitt <hewittsamuel@gmail.com>)
-- a898d95: some bug fixes	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Wed May 11 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.227
+- 82503f8: new default colour based on new palette	(Sam Hewitt <hewittsamuel@gmail.com>)
