@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 45207e8406cf4a702cf74c81b33bb4f170f7aeef
+%global commit0 3f01b6bcce57a4f7e92e4a5b411621af28bde95e
 
 name:       paper-icon-theme
-version:    1.2.0
-release:    0.340.20160501git45207e8%{?dist}
+version:    1.3.0
+release:    0.347.20160501git3f01b6b%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,10 +49,11 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Sun May 08 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.2.0-0.340
-- 45207e8: added less-than-satisfactory gimp icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 35ab919: refined display icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- f1b9a3d: refined symbolic icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- f8f793f: refined utilities icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- f57723e: added utilities icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 95e2220: added computer icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Wed May 11 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.347
+- 3f01b6b: version 1.3	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 326dcc0: more icon colour updates	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 178a539: reorganized colour palette	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 9c05185: more colour updates	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 0b35ee5: updating more colours	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c640f57: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- ee908c4: colour palette update	(Sam Hewitt <hewittsamuel@gmail.com>)
