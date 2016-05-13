@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 3f01b6bcce57a4f7e92e4a5b411621af28bde95e
+%global commit0 0f7ed07701455c018e1e1991d93e0a26d05f0ecf
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.347.20160501git3f01b6b%{?dist}
+release:    0.362.20160501git0f7ed07%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,11 +49,19 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Wed May 11 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.347
-- 3f01b6b: version 1.3	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 326dcc0: more icon colour updates	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 178a539: reorganized colour palette	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 9c05185: more colour updates	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 0b35ee5: updating more colours	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c640f57: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- ee908c4: colour palette update	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Fri May 13 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.362
+- 0f7ed07: added rstudio icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- aba460f: added flux, folder-dropbox	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 6428e60: added status icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 93fa26d: added zsnes icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 9340d5e: added telegram icon & symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 82dc274: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- b8020fb: added session/login icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 0093dfb: desktop icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- fb0492f: updated firefox icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- fe93958: added link	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 37ec975: added a few icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f1bbeae: added a few web icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 4ea4bc6: updated blue folders	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 3443154: updated coloured folders	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 413de02: adding icons	(Sam Hewitt <hewittsamuel@gmail.com>)
