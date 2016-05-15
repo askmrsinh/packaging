@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 5cee4108f0cfd5209438a299723bb8e6e231f2c9
+%global commit0 5b22948f61b61edfc9eb5131b82598e518ff4f61
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.371.20160501git5cee410%{?dist}
+release:    0.374.20160501git5b22948%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,13 +49,7 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Sat May 14 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.371
-- 5cee410: added some distro logos	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 05612f0: refined icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 594bf30: updated deja dup icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- b2ae24f: added exaile icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 5e1cd79: added codeblocks icons; links to others	(Sam Hewitt <hewittsamuel@gmail.com>)
-- b92dfe9: added netbeans icon & linked others	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 928585c: added qtox icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e350da5: added fluxgui-panel	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 94dfeaf: added gnome-nettool icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Sun May 15 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.374
+- 5b22948: added gnome-mplayer icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 0855419: refined guake icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- a99050f: added guake icon	(Sam Hewitt <hewittsamuel@gmail.com>)
