@@ -4,3 +4,6 @@
 [submodule "paper/paper-icon-theme"]
 	path = paper/paper-icon-theme
 	url = git@github.com:snwh/paper-icon-theme.git
+[submodule "arc/arc-theme"]
+	path = arc/arc-theme
+	url = git@github.com:horst3180/arc-theme.git
