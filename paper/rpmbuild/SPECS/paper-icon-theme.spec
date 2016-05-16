@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 5b22948f61b61edfc9eb5131b82598e518ff4f61
+%global commit0 4497b8605dde6ce45f678fe3d8bf88d7c06870b1
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.374.20160501git5b22948%{?dist}
+release:    0.386.20160501git4497b86%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,7 +49,17 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Sun May 15 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.374
-- 5b22948: added gnome-mplayer icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 0855419: refined guake icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- a99050f: added guake icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Mon May 16 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.386
+- 4497b86: Merge pull request #160 from bil-elmoussaoui/master	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 102ef84: add symlinks for Chrome tray	(Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>)
+- 4d6b163: added link	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 5b7db4a: added caffeine icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 94acba6: added computer-fail	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 4bad23a: remove broken links	(Sam Hewitt <hewittsamuel@gmail.com>)
+- d370d0a: added a tonne of symbolic links	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e904cc9: refined desktops	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 6e53166: refined terminal icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 5d338f4: refined terminal icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 163d61b: added youtube icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 1e6b4e0: added wireshark, qbittorrent icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- ed6165a: added applications-multimedia; fixed misnamed icon	(Sam Hewitt <hewittsamuel@gmail.com>)
