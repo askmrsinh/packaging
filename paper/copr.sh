@@ -17,7 +17,7 @@ if [[ ${PWD##*/} != "paper" ]]; then
 fi
 
 submit_build(){
-  echo -e "\e[1;44m$1\e[0m"
+  echo -e "\e[1;44m\n$1\e[0m"
 
   # Get version and revison of the most recent succesful built from Launchpad
   SuccessfullyBuilt=($(wget "https://launchpad.net/~snwh/+archive/ubuntu/pulp/+builds?build_text=$1&build_state=built" --no-cache -O - | grep -Po "build of $1 [0-9].[0-9]\+r[0-9]{3}" | head -n 1 | grep -Po "[0-9.]{3}"))
@@ -42,7 +42,7 @@ submit_build(){
     git merge $GitSHA
     cd ..
   else
-    echo -e "\e[0;32m$1 $pkg_version is already available in Copr repo. Exiting.\e[0m"
+    echo -e "\e[0;32m$1 $pkg_version is already available in Copr repo. Exiting.\n\e[0m"
     return
   fi
 
@@ -77,7 +77,7 @@ submit_build(){
   # Submit Source RPM to Copr
   echo ""
   echo -e "\e[0;34mSubmitting Source RPM to Copr.\e[0m"
-  copr-cli build --nowait Paper "rpmbuild/SRPMS/$1-$pkg_version.src.rpm" -r epel-7-x86_64 -r fedora-22-i386 -r fedora-22-x86_64 -r fedora-23-i386 -r fedora-23-x86_64 -r fedora-24-i386 -r fedora-24-x86_64
+  copr-cli build --nowait Paper "rpmbuild/SRPMS/$1-$pkg_version.src.rpm"
 
   # Cleanup
   rm -r "rpmbuild/SRPMS/$1-$pkg_version.src.rpm"
