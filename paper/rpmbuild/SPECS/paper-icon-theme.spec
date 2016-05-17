@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 4497b8605dde6ce45f678fe3d8bf88d7c06870b1
+%global commit0 3060559509ce7fb7be4a18e3253e355da2b7ca8d
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.386.20160501git4497b86%{?dist}
+release:    0.393.20160501git3060559%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,17 +49,11 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Mon May 16 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.386
-- 4497b86: Merge pull request #160 from bil-elmoussaoui/master	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 102ef84: add symlinks for Chrome tray	(Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>)
-- 4d6b163: added link	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 5b7db4a: added caffeine icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 94acba6: added computer-fail	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 4bad23a: remove broken links	(Sam Hewitt <hewittsamuel@gmail.com>)
-- d370d0a: added a tonne of symbolic links	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e904cc9: refined desktops	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 6e53166: refined terminal icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 5d338f4: refined terminal icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 163d61b: added youtube icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 1e6b4e0: added wireshark, qbittorrent icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- ed6165a: added applications-multimedia; fixed misnamed icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Tue May 17 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.393
+- 3060559: added visual code studio icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- ebb26df: adjusted vector icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 2a913e4: added alternate terminal icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 76d015b: added 2048 icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c46bb54: updated src readme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 567a46c: added uget tray icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 9a879a9: added geany icon	(Sam Hewitt <hewittsamuel@gmail.com>)
