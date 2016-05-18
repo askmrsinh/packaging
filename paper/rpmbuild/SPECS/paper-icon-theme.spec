@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 3060559509ce7fb7be4a18e3253e355da2b7ca8d
+%global commit0 ba6b0df08b857125047f484977c22ae0b5e4a112
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.393.20160501git3060559%{?dist}
+release:    0.413.20160501gitba6b0df%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,11 +49,24 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Tue May 17 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.393
-- 3060559: added visual code studio icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- ebb26df: adjusted vector icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 2a913e4: added alternate terminal icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 76d015b: added 2048 icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c46bb54: updated src readme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 567a46c: added uget tray icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 9a879a9: added geany icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Wed May 18 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.413
+- ba6b0df: added antergos icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 25f351c: renamed install script	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 3e059eb: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e29754f: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 172ac38: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e28e027: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e04011b: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c5a6979: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
+- cd048f7: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 05635bc: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 514e57e: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 550061a: completed libreoffice icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 4254695: adjusted libreoffice icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 123cbee: fixed typo in icon name	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 54a3896: refined some icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 619db69: added popcorn time iocn	(Sam Hewitt <hewittsamuel@gmail.com>)
+- df03ab8: added pgadmin icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 7a039a0: added mumble icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 53afa5f: updated key icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- cdc6d69: added bleachbit icon	(Sam Hewitt <hewittsamuel@gmail.com>)
