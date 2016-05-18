@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 82503f83037246ecb8de5c4faa9dd8f151d73915
+%global commit0 45cde6ac19f4e651f9bc0d3557ebb3e18937403f
 
 name:       paper-gtk-theme
 version:    2.0.0
-release:    0.227.20160501git82503f8%{?dist}
+release:    0.229.20160501git45cde6a%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,5 +46,6 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Wed May 11 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.227
-- 82503f8: new default colour based on new palette	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Wed May 18 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.229
+- 45cde6a: undid install rename	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 927bb82: renamed install script	(Sam Hewitt <hewittsamuel@gmail.com>)
