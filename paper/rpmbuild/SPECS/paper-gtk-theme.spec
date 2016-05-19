@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 45cde6ac19f4e651f9bc0d3557ebb3e18937403f
+%global commit0 5113d58dc64de70fcc75ad2d6d05c8c8dae2de7f
 
 name:       paper-gtk-theme
 version:    2.0.0
-release:    0.229.20160501git45cde6a%{?dist}
+release:    0.231.20160501git5113d58%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,6 +46,6 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Wed May 18 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.229
-- 45cde6a: undid install rename	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 927bb82: renamed install script	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Thu May 19 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.231
+- 5113d58: fixed spec errors	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 8819b6c: tweaked spec for OBS	(Sam Hewitt <hewittsamuel@gmail.com>)
