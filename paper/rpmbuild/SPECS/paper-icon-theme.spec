@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 ba6b0df08b857125047f484977c22ae0b5e4a112
+%global commit0 ade160ee64639c27fb5d0bf9620539c18ce77f00
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.413.20160501gitba6b0df%{?dist}
+release:    0.432.20160501gitade160e%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,24 +49,24 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Wed May 18 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.413
-- ba6b0df: added antergos icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 25f351c: renamed install script	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 3e059eb: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e29754f: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 172ac38: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e28e027: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e04011b: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c5a6979: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
-- cd048f7: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 05635bc: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 514e57e: updated spec	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 550061a: completed libreoffice icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 4254695: adjusted libreoffice icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 123cbee: fixed typo in icon name	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 54a3896: refined some icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 619db69: added popcorn time iocn	(Sam Hewitt <hewittsamuel@gmail.com>)
-- df03ab8: added pgadmin icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 7a039a0: added mumble icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 53afa5f: updated key icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- cdc6d69: added bleachbit icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Thu May 19 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.432
+- ade160e: updated text-x-go colours	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 604d76f: added text-x-go	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 69b4646: added focuswriter icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 46d3ab6: added amarok symlink	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 3a4d920: added amarok icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 6dd085f: added rust mimetype	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e5285d9: minor spec fixed	(Sam Hewitt <hewittsamuel@gmail.com>)
+- a78cd9c: tweaked spec for OBS	(Sam Hewitt <hewittsamuel@gmail.com>)
+- b01b1e6: Merge pull request #177 from user501254/patch-1	(Sam Hewitt <hewittsamuel@gmail.com>)
+- af069ae: Update spec file	(Ashesh <user501254@gmail.com>)
+- ec755b8: finished folders	(Sam Hewitt <hewittsamuel@gmail.com>)
+- ad78795: updated colours in a couple icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 76c7624: added insync icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 88c988a: added network wired disconnected icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- eb6ff0e: added wps office icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 5ce12b1: moved misplaced svg	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 1b0dacb: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 202575a: undo install rename	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 6b0525d: new firefox icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- a46b4ee: added zotero icon	(Sam Hewitt <hewittsamuel@gmail.com>)
