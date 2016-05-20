@@ -4,7 +4,7 @@
 
 Name:		arc-theme-solid
 Version:	1459454111.c561afa
-Release:	65.1%{?dist}
+Release:	26.1%{?dist}
 Summary:	Arc is a theme for GTK 3, GTK 2 and Gnome-Shell.
 Group:		User Interface/Desktops
 
