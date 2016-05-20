@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 ade160ee64639c27fb5d0bf9620539c18ce77f00
+%global commit0 5c3c4ca45d904cd83e377d216612d1d7d993a565
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.432.20160501gitade160e%{?dist}
+release:    0.445.20160501git5c3c4ca%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,24 +49,17 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Thu May 19 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.432
-- ade160e: updated text-x-go colours	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 604d76f: added text-x-go	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 69b4646: added focuswriter icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 46d3ab6: added amarok symlink	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 3a4d920: added amarok icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 6dd085f: added rust mimetype	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e5285d9: minor spec fixed	(Sam Hewitt <hewittsamuel@gmail.com>)
-- a78cd9c: tweaked spec for OBS	(Sam Hewitt <hewittsamuel@gmail.com>)
-- b01b1e6: Merge pull request #177 from user501254/patch-1	(Sam Hewitt <hewittsamuel@gmail.com>)
-- af069ae: Update spec file	(Ashesh <user501254@gmail.com>)
-- ec755b8: finished folders	(Sam Hewitt <hewittsamuel@gmail.com>)
-- ad78795: updated colours in a couple icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 76c7624: added insync icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 88c988a: added network wired disconnected icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- eb6ff0e: added wps office icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 5ce12b1: moved misplaced svg	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 1b0dacb: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 202575a: undo install rename	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 6b0525d: new firefox icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- a46b4ee: added zotero icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Fri May 20 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.445
+- 5c3c4ca: added extra folders	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 8e65404: added clipboard icons;updated battery symbolics	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 8ebea8f: added solus icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 57be322: updated a few icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f5a1be9: added media-flash	(Sam Hewitt <hewittsamuel@gmail.com>)
+- d0481d4: updated whatsapp icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- cc00af2: added whatsapp icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 1693a2d: added cairo-dock	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 172b108: added extra opera icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 6ef6047: added more distro logos	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 1693f86: stylized emacs icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- b3f0f66: updated vlc and vim icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- eec7a83: added intellij idea icon	(Sam Hewitt <hewittsamuel@gmail.com>)
