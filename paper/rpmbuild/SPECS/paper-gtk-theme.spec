@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 8f6e943c46417f758694d19d2914bed1a01bd6e6
+%global commit0 6831599d358f4556bd2d3aeab3183a8f9152cf9d
 
 name:       paper-gtk-theme
 version:    2.0.0
-release:    0.233.20160501git8f6e943%{?dist}
+release:    0.242.20160501git6831599%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,6 +46,13 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Mon May 23 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.233
-- 8f6e943: update spec file	(Sam Hewitt <hewittsamuel@gmail.com>)
-- aacc170: some dark theme updates; budgie stylings	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Tue May 24 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.242
+- 6831599: tweaked budgie header switch styles	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 2069957: smaller budgie header switches	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 0e8585f: tweaked budgie header switch styles	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e2cdacb: added budgie header switch styles	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 5aa983e: v2.0.2	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 87369ba: more budgie refinements	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 3c0ec75: switch style improvements	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 3b3c58f: budgie refinements	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 44e0b3f: budgie fixes	(Sam Hewitt <hewittsamuel@gmail.com>)
