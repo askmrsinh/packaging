@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 6831599d358f4556bd2d3aeab3183a8f9152cf9d
+%global commit0 f3a5096b5bc41105e17b3228146a3be8aff850c7
 
 name:       paper-gtk-theme
 version:    2.0.0
-release:    0.242.20160501git6831599%{?dist}
+release:    0.257.20160501gitf3a5096%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,13 +46,19 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Tue May 24 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.242
-- 6831599: tweaked budgie header switch styles	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 2069957: smaller budgie header switches	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 0e8585f: tweaked budgie header switch styles	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e2cdacb: added budgie header switch styles	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 5aa983e: v2.0.2	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 87369ba: more budgie refinements	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 3c0ec75: switch style improvements	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 3b3c58f: budgie refinements	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 44e0b3f: budgie fixes	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Wed May 25 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.257
+- f3a5096: fixed some menu bugs	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f3066b2: updated colors	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e906a43: updated colors	(Sam Hewitt <hewittsamuel@gmail.com>)
+- cb3ff1e: updated selection colour	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 12ec99b: updated selection colour	(Sam Hewitt <hewittsamuel@gmail.com>)
+- bbbf050: updated colours	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 3c65feb: updated plank theme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 3394d11: updated plank theme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 80f65e2: a few refinements	(Sam Hewitt <hewittsamuel@gmail.com>)
+- d3d282d: a few bugfixes	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 9dbe261: a few bug fixes	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 86fd8b8: improved level bars	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e23bbd2: updated colours	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 443526f: levelbar improvements	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 04b94a1: refinements	(Sam Hewitt <hewittsamuel@gmail.com>)
