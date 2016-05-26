@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 f3a5096b5bc41105e17b3228146a3be8aff850c7
+%global commit0 dea5f97b12e4f41dddbd01a1529760761aa3784e
 
 name:       paper-gtk-theme
-version:    2.0.0
-release:    0.257.20160501gitf3a5096%{?dist}
+version:    2.1.0
+release:    0.261.20160501gitdea5f97%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,19 +46,8 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Wed May 25 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.0.0-0.257
-- f3a5096: fixed some menu bugs	(Sam Hewitt <hewittsamuel@gmail.com>)
-- f3066b2: updated colors	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e906a43: updated colors	(Sam Hewitt <hewittsamuel@gmail.com>)
-- cb3ff1e: updated selection colour	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 12ec99b: updated selection colour	(Sam Hewitt <hewittsamuel@gmail.com>)
-- bbbf050: updated colours	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 3c65feb: updated plank theme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 3394d11: updated plank theme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 80f65e2: a few refinements	(Sam Hewitt <hewittsamuel@gmail.com>)
-- d3d282d: a few bugfixes	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 9dbe261: a few bug fixes	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 86fd8b8: improved level bars	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e23bbd2: updated colours	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 443526f: levelbar improvements	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 04b94a1: refinements	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Thu May 26 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.1.0-0.261
+- dea5f97: added a dark portion to the gtk2 theme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c35c9c8: toned down text colour in gtk2	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c02e6b2: fixed missing asset	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 8a06ac9: redid the GTK2 theme	(Sam Hewitt <hewittsamuel@gmail.com>)
