@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 dea5f97b12e4f41dddbd01a1529760761aa3784e
+%global commit0 06fb8b41743dd99410c08a9beabc323e6631d009
 
 name:       paper-gtk-theme
 version:    2.1.0
-release:    0.261.20160501gitdea5f97%{?dist}
+release:    0.262.20160501git06fb8b4%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,8 +46,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Thu May 26 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.1.0-0.261
-- dea5f97: added a dark portion to the gtk2 theme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c35c9c8: toned down text colour in gtk2	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c02e6b2: fixed missing asset	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 8a06ac9: redid the GTK2 theme	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Sat May 28 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.1.0-0.262
+- 06fb8b4: gtk2 dark theme wasn't working	(Sam Hewitt <hewittsamuel@gmail.com>)
