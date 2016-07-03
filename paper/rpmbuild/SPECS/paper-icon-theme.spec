@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 79829b21b217f38ab0f4a776a77890719f9263e3
+%global commit0 70f1c0453521a17d80db2d2d473cc7b3e6e7b913
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.561.20160501git79829b2%{?dist}
+release:    0.564.20160501git70f1c04%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,5 +49,10 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Sun Jun 26 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.561
-- 79829b2: added markdown mime icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Sun Jul 03 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.564
+- 70f1c04: Merge pull request #288 from Findus23/icedove	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 0000257: add symlink for icedove	(Lukas Winkler <l.winkler23@mailbox.org>)
+- 5944e66: Merge pull request #276 from sappo/master	(Sam Hewitt <hewittsamuel@gmail.com>)
+- a8514ce: Merge pull request #285 from Findus23/master	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 78ac875: add symlink for firefox-esr	(Lukas Winkler <l.winkler23@mailbox.org>)
+- 0ed0925: Problem: seafile client references icon by seafile instead of seafile-client	(Kevin Sapper <mail@kevinsapper.de>)
