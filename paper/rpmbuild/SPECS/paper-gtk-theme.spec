@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 06fb8b41743dd99410c08a9beabc323e6631d009
+%global commit0 b3a3b59094300acfd93b7e810fa5208662efcbd5
 
 name:       paper-gtk-theme
 version:    2.1.0
-release:    0.262.20160501git06fb8b4%{?dist}
+release:    0.263.20160501gitb3a3b59%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,5 +46,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Sat May 28 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.1.0-0.262
-- 06fb8b4: gtk2 dark theme wasn't working	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Sun Jul 10 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.1.0-0.263
+- b3a3b59: Create org.snwh.paper.theme.desktop	(Sam Hewitt <hewittsamuel@gmail.com>)
