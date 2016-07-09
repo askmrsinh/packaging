@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 70f1c0453521a17d80db2d2d473cc7b3e6e7b913
+%global commit0 dca2ec16130aa39ef23c40e2e775e7b5ee691883
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.564.20160501git70f1c04%{?dist}
+release:    0.565.20160501gitdca2ec1%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,10 +49,8 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Sun Jul 03 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.564
-- 70f1c04: Merge pull request #288 from Findus23/icedove	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 0000257: add symlink for icedove	(Lukas Winkler <l.winkler23@mailbox.org>)
-- 5944e66: Merge pull request #276 from sappo/master	(Sam Hewitt <hewittsamuel@gmail.com>)
-- a8514ce: Merge pull request #285 from Findus23/master	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 78ac875: add symlink for firefox-esr	(Lukas Winkler <l.winkler23@mailbox.org>)
-- 0ed0925: Problem: seafile client references icon by seafile instead of seafile-client	(Kevin Sapper <mail@kevinsapper.de>)
+* Sun Jul 10 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.565
+- dca2ec1: new desktop file for installing updating	(Sam Hewitt <hewittsamuel@gmail.com>)
+- ebc3ff2: added visual studio symlink	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f947c66: Merge branch 'master' of github.com:snwh/paper-icon-theme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 6f23124: fixed text-rust	(Sam Hewitt <hewittsamuel@gmail.com>)
