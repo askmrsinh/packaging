@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 dca2ec16130aa39ef23c40e2e775e7b5ee691883
+%global commit0 201899042922321342c861f6ae6720f6abe399ab
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.565.20160501gitdca2ec1%{?dist}
+release:    0.569.20160501git2018990%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,8 +49,8 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Sun Jul 10 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.565
-- dca2ec1: new desktop file for installing updating	(Sam Hewitt <hewittsamuel@gmail.com>)
-- ebc3ff2: added visual studio symlink	(Sam Hewitt <hewittsamuel@gmail.com>)
-- f947c66: Merge branch 'master' of github.com:snwh/paper-icon-theme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 6f23124: fixed text-rust	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Sat Aug 27 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.569
+- 2018990: added evernote icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 7b2885b: a few minor changes	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 64b91da: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c8c4238: gcolor symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
