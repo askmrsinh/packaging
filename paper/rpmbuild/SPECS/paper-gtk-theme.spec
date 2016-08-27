@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 b3a3b59094300acfd93b7e810fa5208662efcbd5
+%global commit0 f75724fd76fd2e5681a367cca246a51f845320c3
 
 name:       paper-gtk-theme
 version:    2.1.0
-release:    0.263.20160501gitb3a3b59%{?dist}
+release:    0.265.20160501gitf75724f%{?dist}
 
 Summary:    Paper GTK Theme
 Group:      System/GUI/Other
@@ -46,5 +46,7 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/themes/
 %{_datadir}/themes/Paper/
 
 %changelog
-* Sun Jul 10 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.1.0-0.263
-- b3a3b59: Create org.snwh.paper.theme.desktop	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Sat Aug 27 2016 Ashesh Kumar Singh <user501254@gmail.com> 2.1.0-0.265
+- f75724f: Merge pull request #390 from Curly-/master	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 00a3ee7: Reduced minimum size of topbar icons	(Sam Bazley <samb1999@hotmail.co.uk>)
+- cecb923: Update org.snwh.paper.theme.desktop	(Sam Hewitt <hewittsamuel@gmail.com>)
