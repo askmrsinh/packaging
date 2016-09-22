@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 201899042922321342c861f6ae6720f6abe399ab
+%global commit0 95a53798385fa344238c27f7f4e504609501b607
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.569.20160501git2018990%{?dist}
+release:    0.580.20160501git95a5379%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,8 +49,15 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Sat Aug 27 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.569
-- 2018990: added evernote icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 7b2885b: a few minor changes	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 64b91da: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c8c4238: gcolor symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Fri Sep 23 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.580
+- 95a5379: added lockscreen icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 32fedb4: updated docs	(Sam Hewitt <hewittsamuel@gmail.com>)
+- bbb30a7: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- df0c0fe: added gitter to readme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 74a6a50: added links	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 28d2401: added some missing panel icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- ae811ce: added a bunch of symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- cf1eb04: added totem symlink	(Sam Hewitt <hewittsamuel@gmail.com>)
+- ea71366: added bitcoin icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 97f8e8f: added anki icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 3dfc927: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
