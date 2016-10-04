@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 95a53798385fa344238c27f7f4e504609501b607
+%global commit0 54fa6058d7f6ec964a88a6558cb99fec15df2389
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.580.20160501git95a5379%{?dist}
+release:    0.619.20160501git54fa605%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,15 +49,43 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Fri Sep 23 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.580
-- 95a5379: added lockscreen icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 32fedb4: updated docs	(Sam Hewitt <hewittsamuel@gmail.com>)
-- bbb30a7: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- df0c0fe: added gitter to readme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 74a6a50: added links	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 28d2401: added some missing panel icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- ae811ce: added a bunch of symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
-- cf1eb04: added totem symlink	(Sam Hewitt <hewittsamuel@gmail.com>)
-- ea71366: added bitcoin icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 97f8e8f: added anki icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 3dfc927: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Wed Oct 05 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.619
+- 54fa605: updated index	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 6811d60: removed non-existent 22px references in index	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 36a8d65: unified render script	(Sam Hewitt <hewittsamuel@gmail.com>)
+- b5068ce: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- a5f15a9: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 72b45f8: update docs	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 5603ca3: added some symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 593ddcf: added some symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f77cd67: added some mint symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- d1f1abf: added some mint symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e5070ba: added folder recent	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f0aa38d: added preferences effects icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c348d77: added some mint symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e34f353: added some more Mint-specific icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- d92a7e8: added some Mint-specific icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- ac4f9a1: added mgba icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- eb10ef8: added shutter icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- aa63086: added five-or-more icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- b2f513a: added scribus icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c3e131e: added recent icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 609a7b3: added dota 2 icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 911b729: added linssid icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 9006e5a: added facebook messenger icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 0fa7de1: updated folder icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 59dac5a: fixed 16px place icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 3fe8b85: added variety icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 37e9a3e: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 46ae233: updated 16px place icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 6922144: added lastfm icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c361230: added stellarium icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 842811d: added celestia icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 4a5c1dc: added cantata icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 8521b27: added mendeleydesktop icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c92cfec: added devede symlink	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 63c1d0f: fixed panel icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- b0fe58b: fixed battery icon mistake	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 9335117: fixed misnamed icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 856612c: fixed 48px muted icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 35fc1a0: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
