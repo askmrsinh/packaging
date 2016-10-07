@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 54fa6058d7f6ec964a88a6558cb99fec15df2389
+%global commit0 a7d5d4f04a118d44336e1386267f2a48f29e1fa7
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.619.20160501git54fa605%{?dist}
+release:    0.662.20160501gita7d5d4f%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,43 +49,47 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Wed Oct 05 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.619
-- 54fa605: updated index	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 6811d60: removed non-existent 22px references in index	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 36a8d65: unified render script	(Sam Hewitt <hewittsamuel@gmail.com>)
-- b5068ce: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- a5f15a9: update readme	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 72b45f8: update docs	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 5603ca3: added some symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 593ddcf: added some symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
-- f77cd67: added some mint symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
-- d1f1abf: added some mint symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e5070ba: added folder recent	(Sam Hewitt <hewittsamuel@gmail.com>)
-- f0aa38d: added preferences effects icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c348d77: added some mint symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
-- e34f353: added some more Mint-specific icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- d92a7e8: added some Mint-specific icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- ac4f9a1: added mgba icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- eb10ef8: added shutter icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- aa63086: added five-or-more icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- b2f513a: added scribus icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c3e131e: added recent icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 609a7b3: added dota 2 icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 911b729: added linssid icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 9006e5a: added facebook messenger icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 0fa7de1: updated folder icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 59dac5a: fixed 16px place icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 3fe8b85: added variety icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 37e9a3e: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 46ae233: updated 16px place icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 6922144: added lastfm icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c361230: added stellarium icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 842811d: added celestia icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 4a5c1dc: added cantata icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 8521b27: added mendeleydesktop icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c92cfec: added devede symlink	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 63c1d0f: fixed panel icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- b0fe58b: fixed battery icon mistake	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 9335117: fixed misnamed icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 856612c: fixed 48px muted icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 35fc1a0: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Sat Oct 08 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.662
+- a7d5d4f: added some package icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- f287885: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 27fc5ed: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- d6cbac5: added deb icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 38572e1: adjusted archive filenames and links	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 89353a0: adjusted document mime icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- ebaae7c: adjusted zip icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- d0c17aa: refined zip icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 09bc577: added bzip icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 8d9aea8: refined targz icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 4b0c9e8: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 4dccd52: added gz symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 52c4826: added gz icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 84a3bfa: added tar symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 976f699: added tar icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 40a6d28: refined package mimes	(Sam Hewitt <hewittsamuel@gmail.com>)
+- bdddd54: extended package mimes	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c6cd607: updated pdf icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 18de367: added freecad icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e437de3: added hex icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 47b672a: added retext icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- c9c6e51: added typora icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- b2c4985: added museeq icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- bbbf37b: added google hangouts icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 9b23012: added symlink	(Sam Hewitt <hewittsamuel@gmail.com>)
+- fb9fb8b: added sparkleshare panel icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e638b90: added missing panel icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 00b1750: oops v1.3.4	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 14fe393: v1.3.3	(Sam Hewitt <hewittsamuel@gmail.com>)
+- b1c99b9: updated battery icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- a0de0b9: added a couple icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 2ad06a4: fixed calendar icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e376372: fixed calendar icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 6ae2b43: added play music icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 4434a03: added xmind icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- cdec7a9: added icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 389d0f2: added smartgit icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 4e8aaa9: added mono icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- d9bf170: added xnoise icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 78e3f4a: added a tonne of calendar icons	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 675561e: added antimicro icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 82e13d3: added ghex icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+- e16f79a: added discord-canary icon	(Sam Hewitt <hewittsamuel@gmail.com>)
