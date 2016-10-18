@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 4e5296548913dcd8d28225e51f4a3036a2bce1db
+%global commit0 d624f27208f093e4448900b16660ab081d9d7b3f
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.667.20160501git4e52965%{?dist}
+release:    0.669.20160501gitd624f27%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,8 +49,6 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Sat Oct 15 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.667
-- 4e52965: fixed a panel icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 62e8dc0: re-rendered panel icons	(Sam Hewitt <hewittsamuel@gmail.com>)
-- c8e6d06: updated minecraft icon	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 22be243: darkened discord-canary icon	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Wed Oct 19 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.669
+- d624f27: fixed autogen	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 2f365f0: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
