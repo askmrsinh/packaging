@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 712acc0e78357f9c42b332ecd615a5b45ee2f7d4
+%global commit0 2a1f25a47fe8fb92e9d4db5537bbddb539586602
 
 name:       paper-icon-theme
 version:    1.3.0
-release:    0.671.20160501git712acc0%{?dist}
+release:    0.672.20160501git2a1f25a%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,7 +49,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Mon Oct 31 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.671
-- 712acc0: added symlinks	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 76fe289: Merge pull request #440 from germanfr/master	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 0f617ec: Fix autogen.sh, fixes #425 Fixes a build error because of line endings character recognized as a syntax error in bash. Also added it to .gitattributes so that it will be converted to LF if anyone pushes it as CRLF	(Germán Franco <dev.germanfr@gmail.com>)
+* Tue Nov 08 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.672
+- 2a1f25a: Update ISSUE_TEMPLATE.md	(Sam Hewitt <hewittsamuel@gmail.com>)
