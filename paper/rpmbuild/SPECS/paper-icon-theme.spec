@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 2a1f25a47fe8fb92e9d4db5537bbddb539586602
+%global commit0 f05f022cdf8c0b1bbff4256b3bd472b74928b91e
 
 name:       paper-icon-theme
-version:    1.3.0
-release:    0.672.20160501git2a1f25a%{?dist}
+version:    1.4.0
+release:    0.674.20160501gitf05f022%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,5 +49,7 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Tue Nov 08 2016 Ashesh Kumar Singh <user501254@gmail.com> 1.3.0-0.672
-- 2a1f25a: Update ISSUE_TEMPLATE.md	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Fri Jan 13 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.674
+- f05f022: v.1.4.0	(Sam Hewitt <sam@snwh.org>)
+- d0b186b: Merge branch 'master' of github.com:snwh/paper-icon-theme	(Sam Hewitt <sam@snwh.org>)
+- 6c388d2: added dark panel theme	(Sam Hewitt <sam@snwh.org>)
