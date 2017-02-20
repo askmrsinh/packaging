@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 f05f022cdf8c0b1bbff4256b3bd472b74928b91e
+%global commit0 fcaf8bb2aacdd1bb7dcde3d45ef92d0751567e8e
 
 name:       paper-icon-theme
 version:    1.4.0
-release:    0.674.20160501gitf05f022%{?dist}
+release:    0.675.20160501gitfcaf8bb%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,7 +49,6 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Fri Jan 13 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.674
-- f05f022: v.1.4.0	(Sam Hewitt <sam@snwh.org>)
-- d0b186b: Merge branch 'master' of github.com:snwh/paper-icon-theme	(Sam Hewitt <sam@snwh.org>)
-- 6c388d2: added dark panel theme	(Sam Hewitt <sam@snwh.org>)
+* Mon Feb 20 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.675
+- fcaf8bb: Merge pull request #499 from tista500/fix-ephy-3.23	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 39db545: Added symlinks for Ephy 3.23.x	(tista500 <tista.gma500@gmail.com>)
