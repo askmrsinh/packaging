@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 fcaf8bb2aacdd1bb7dcde3d45ef92d0751567e8e
+%global commit0 d3d6fbe1d67bea45b252e505cbfbe8f38a617985
 
 name:       paper-icon-theme
 version:    1.4.0
-release:    0.675.20160501gitfcaf8bb%{?dist}
+release:    0.676.20160501gitd3d6fbe%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,6 +49,6 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Mon Feb 20 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.675
-- fcaf8bb: Merge pull request #499 from tista500/fix-ephy-3.23	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 39db545: Added symlinks for Ephy 3.23.x	(tista500 <tista.gma500@gmail.com>)
+* Sat Mar 04 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.676
+- d3d6fbe: Merge pull request #515 from LaurentTreguier/master	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 77f1cee: Add symlinks for Ghetto Skype	(LaurentTreguier <laurent@treguier.org>)
