@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 19bf8d6b029b83e6fd451a6d76639d7d917545b9
+%global commit0 579e9aab637bdd77f1ec5b8cf0696a79954a8853
 
 name:       paper-icon-theme
 version:    1.4.0
-release:    0.678.20160501git19bf8d6%{?dist}
+release:    0.679.20160501git579e9aa%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,9 +49,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Thu Mar 16 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.678
-- 19bf8d6: Merge pull request #517 from LaurentTreguier/master	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 408f627: Merge pull request #526 from gabrielelucci/master	(Sam Hewitt <hewittsamuel@gmail.com>)
-- 4631856: fix README.md	(Gabriele Lucci <gabrielelucci.0@gmail.com>)
-- bcb6949: add symbolic links for Tilix (f.k.a. Terminix)	(Gabriele Lucci <gabrielelucci.0@gmail.com>)
-- cb8a2e3: Remove useless Ghetto Skype symlink	(LaurentTreguier <laurent@treguier.org>)
+* Thu Mar 23 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.679
+- 579e9aa: added symlinks	(Sam Hewitt <sam@snwh.org>)
