@@ -24,8 +24,8 @@ submit_build(){
     SuccessfullyBuilt=$(wget "http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-theme" --no-cache -O - | grep -Po "arc-theme-[0-9]{10}.[0-9a-z]{7}-[0-9.]{4}.noarch.rpm" | head -n 1 | grep -Po "[0-9]{10}.[0-9a-z]{7}-[0-9.]{4}")
   echo -e "\e[0;34mLast succesful OBS built for $1 was $SuccessfullyBuilt.\n\e[0m"
   fi
-  if [[ $1 == "arc-theme-soid" ]]; then
-    SuccessfullyBuilt=$(wget "http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-theme-soid" --no-cache -O - | grep -Po "arc-theme-solid-[0-9]{10}.[0-9a-z]{7}-[0-9.]{4}.noarch.rpm" | head -n 1 | grep -Po "[0-9]{10}.[0-9a-z]{7}-[0-9.]{4}")
+  if [[ $1 == "arc-theme-solid" ]]; then
+    SuccessfullyBuilt=$(wget "http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-theme-solid" --no-cache -O - | grep -Po "arc-theme-solid-[0-9]{10}.[0-9a-z]{7}-[0-9.]{4}.noarch.rpm" | head -n 1 | grep -Po "[0-9]{10}.[0-9a-z]{7}-[0-9.]{4}")
   echo -e "\e[0;34mLast succesful OBS built for $1 was $SuccessfullyBuilt.\n\e[0m"
   fi
   
@@ -36,8 +36,8 @@ submit_build(){
   if [[ $(wget "https://copr.fedoraproject.org/api/coprs/user501254/Arc/monitor/" --no-cache -O - | grep -Po "$1-$pkg_version" | head -n 1) == "" ]]; then
     cd arc-theme/
     # Get corresponding Git SHA for the built
-    GitSHA=$(git log --pretty=format:"%H" ${SuccessfullyBuilt:11:7} -1)
     git fetch
+    GitSHA=$(git log --pretty=format:"%H" ${SuccessfullyBuilt:11:7} -1)
     git merge $GitSHA
     cd ..
   else
@@ -58,17 +58,17 @@ submit_build(){
   sed -i "s/%global commit0 .*/%global commit0 $GitSHA/" rpmbuild/SPECS/$1.spec
 
   # Set version and release tag value within spec file
-  sed -i "s/Version:	.*/Version:	$VersionTag/; s/Release:	.*/Release:	$ReleaseTag%{?dist}/" rpmbuild/SPECS/$1.spec
+  sed -i "s/Version:    .*/Version:    $VersionTag/; s/Release:    .*/Release:    $ReleaseTag%{?dist}/" rpmbuild/SPECS/$1.spec
 
   # Generate Changelog since last release
-  #sed -n -i '/%changelog/q;p' rpmbuild/SPECS/$1.spec
-  #echo '%changelog' >> rpmbuild/SPECS/$1.spec
-  #ReleaseDate=$(date +"%a %b %d %Y")
-  #PackagerInfo="Ashesh Kumar Singh <user501254@gmail.com>"
-  #echo "* $ReleaseDate $PackagerInfo $VersionTag-$ReleaseTag" >> rpmbuild/SPECS/$1.spec
-  #cd arc-theme/
-  #git log --pretty=format:"- %h: %s%x09(%an <%ae>)" $GitSHA...$EndCommit >> ../rpmbuild/SPECS/$1.spec
-  #cd ..
+  sed -n -i '/%changelog/q;p' rpmbuild/SPECS/$1.spec
+  echo '%changelog' >> rpmbuild/SPECS/$1.spec
+  ReleaseDate=$(date +"%a %b %d %Y")
+  PackagerInfo="Ashesh Kumar Singh <user501254@gmail.com>"
+  echo "* $ReleaseDate $PackagerInfo $VersionTag-$ReleaseTag" >> rpmbuild/SPECS/$1.spec
+  cd arc-theme/
+  git log --pretty=format:"- %h: %s%x09(%an <%ae>)" $GitSHA...$EndCommit >> ../rpmbuild/SPECS/$1.spec
+  cd ..
 
   # Build only Source RPM
   rpmbuild --define "_topdir $PWD/rpmbuild" -bs rpmbuild/SPECS/$1.spec
@@ -76,7 +76,7 @@ submit_build(){
   # Submit Source RPM to Copr
   echo ""
   echo -e "\e[0;34mSubmitting Source RPM to Copr.\e[0m"
-  copr-cli build --nowait Arc "rpmbuild/SRPMS/$1-$pkg_version.src.rpm" -r epel-7-x86_64 -r fedora-22-i386 -r fedora-22-x86_64 -r fedora-23-i386 -r fedora-23-x86_64 -r fedora-24-i386 -r fedora-24-x86_64
+  copr-cli build --nowait Arc "rpmbuild/SRPMS/$1-$pkg_version.src.rpm"
 
   # Cleanup
   rm -r "rpmbuild/SRPMS/$1-$pkg_version.src.rpm"
