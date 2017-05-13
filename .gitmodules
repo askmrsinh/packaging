@@ -7,3 +7,6 @@
 [submodule "arc/arc-theme"]
 	path = arc/arc-theme
 	url = git@github.com:horst3180/arc-theme.git
+[submodule "arc/arc-icon-theme"]
+	path = arc/arc-icon-theme
+	url = git@github.com:horst3180/arc-icon-theme.git
