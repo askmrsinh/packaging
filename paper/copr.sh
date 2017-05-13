@@ -36,13 +36,13 @@ submit_build(){
   Checkout=20160501git${GitSHA:0:7}
   pkg_version=$VersionTag-$Revision.$Checkout.$(uname -a | grep -Po "fc[0-9]{2}")
 
-  if [[ $(wget "https://copr.fedoraproject.org/api/coprs/user501254/Paper/monitor/" --no-cache -O - | grep -Po "$1-$pkg_version" | head -n 1) == "" ]]; then
+  if [[ $(wget "https://copr.fedoraproject.org/api/coprs/user501254/Paper/monitor/" --no-cache -O - | grep -Po "$1-$VersionTag-$Revision.$Checkout" | head -n 1) == "" ]]; then
     cd $1/
     git fetch
     git merge $GitSHA
     cd ..
   else
-    echo -e "\e[0;32m$1 $pkg_version is already available in Copr repo. Exiting.\n\e[0m"
+    echo -e "\e[0;32m$1 $VersionTag-$Revision.$Checkout is already available in Copr repo. Exiting.\n\e[0m"
     return
   fi
 

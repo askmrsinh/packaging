@@ -33,7 +33,7 @@ submit_build(){
   ReleaseTag=${SuccessfullyBuilt#*-}
   pkg_version=$VersionTag-$ReleaseTag.$(uname -a | grep -Po "fc[0-9]{2}")
 
-  if [[ $(wget "https://copr.fedoraproject.org/api/coprs/user501254/Arc/monitor/" --no-cache -O - | grep -Po "$1-$pkg_version" | head -n 1) == "" ]]; then
+  if [[ $(wget "https://copr.fedoraproject.org/api/coprs/user501254/Arc/monitor/" --no-cache -O - | grep -Po "$1-$VersionTag-$ReleaseTag" | head -n 1) == "" ]]; then
     cd arc-theme/
     # Get corresponding Git SHA for the built
     git fetch
@@ -41,7 +41,7 @@ submit_build(){
     git merge $GitSHA
     cd ..
   else
-    echo -e "\e[0;32m$1 $pkg_version is already available in Copr repo. Exiting.\e[0m"
+    echo -e "\e[0;32m$1 $VersionTag-$ReleaseTag is already available in Copr repo. Exiting.\e[0m"
     return
   fi
 
