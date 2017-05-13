@@ -24,4 +24,8 @@
         <a href="https://copr.fedorainfracloud.org/coprs/user501254/Arc/package/arc-theme-solid/">
           <img src="https://copr.fedorainfracloud.org/coprs/user501254/Arc/package/arc-theme-solid/status_image/last_build.png" />
         </a>
+      - [arc-icon-theme](https://github.com/horst3180/arc-icon-theme)  
+        <a href="https://copr.fedorainfracloud.org/coprs/user501254/Arc/package/arc-icon-theme/">
+          <img src="https://copr.fedorainfracloud.org/coprs/user501254/Arc/package/arc-icon-theme/status_image/last_build.png" />
+        </a>
     - RedHat distributions (RPM), [see Copr](https://copr.fedorainfracloud.org/coprs/user501254/Arc/).
