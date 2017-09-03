@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 0411510696fa813837244099bba099958d06e19e
+%global commit0 0db50a9f16300bd00a47c980cf9a075448581ff4
 
 name:       paper-icon-theme
 version:    1.4.0
-release:    0.690.20160501git0411510%{?dist}
+release:    0.691.20160501git0db50a9%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,5 +49,5 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Wed Jun 14 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.690
-- 0411510: added some folder color links	(Sam Hewitt <sam@snwh.org>)
+* Sun Sep 03 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.691
+- 0db50a9f: Update README.md	(Sam Hewitt <hewittsamuel@gmail.com>)
