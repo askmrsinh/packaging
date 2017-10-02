@@ -14,11 +14,11 @@
 
 
 # GitHub Stuff
-%global commit0 0db50a9f16300bd00a47c980cf9a075448581ff4
+%global commit0 c153195cb8e11b4d0130a216cd7c18b6d7d415da
 
 name:       paper-icon-theme
 version:    1.4.0
-release:    0.691.20160501git0db50a9%{?dist}
+release:    0.692.20160501gitc153195%{?dist}
 
 Summary:    Paper Icon theme
 Group:      System/GUI/Other
@@ -49,5 +49,6 @@ cp -a Paper/ $RPM_BUILD_ROOT%{_datadir}/icons/
 %{_datadir}/icons/Paper/
 
 %changelog
-* Sun Sep 03 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.691
-- 0db50a9f: Update README.md	(Sam Hewitt <hewittsamuel@gmail.com>)
+* Mon Oct 02 2017 Ashesh Kumar Singh <user501254@gmail.com> 1.4.0-0.692
+- c153195c: Merge pull request #612 from ozmartian/master	(Sam Hewitt <hewittsamuel@gmail.com>)
+- 95bf8953: Update index.theme	(Pete Alexandrou <pete@ozmartians.com>)
